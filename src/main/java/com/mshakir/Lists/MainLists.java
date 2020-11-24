@@ -21,8 +21,11 @@ public class MainLists {
 		printAll(people);
 		System.out.println("*****************");
 		printFirstNameStartwithS(people);
+		
+		people.forEach(p -> System.out.println(p));
 	}
-
+	//	Using Lamba Expression
+	
 	private static void printFirstNameStartwithS(List<Person> people) {
 		for (Person p : people) {
 			if (p.getFirstName().startsWith("S")) {
@@ -36,6 +39,5 @@ public class MainLists {
 		for (Person p : people) {
 			System.out.println(p);
 		}
-
 	}
 }

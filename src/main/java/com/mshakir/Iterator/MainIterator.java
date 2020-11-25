@@ -1,4 +1,4 @@
-package com.mshakir;
+package com.mshakir.Iterator;
 
 /* Iterator allows the user to go over the list elements one by one. It can access only forward elements. 
  * Iterator Interface has only three main methods. hasNext, next, remove

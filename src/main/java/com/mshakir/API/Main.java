@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		API.callCurrency();
 		// inline will store the JSON data streamed in string format
 		String inline = "";
 

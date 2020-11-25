@@ -1,11 +1,14 @@
 package com.mshakir.Lists;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class MainLists {
 	public static void main(String[] args) {
-
+		
+		String arr1[] = { "a", "b", "c", "d" };
+		ArrayList<String> list1 = new ArrayList<String>(Arrays.asList(arr1));
+		System.out.println(list1);
+		
 		Person p1 = new Person("Charles", "Dickens", 0);
 		Person p2 = new Person("Lewis", "Arnold", 0);
 		Person p3 = new Person("Mathew", "Sarah", 0);

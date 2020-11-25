@@ -26,13 +26,13 @@ public class MainLists {
 		printFirstNameStartwithS(people);
 		System.out.println("*****************");
 		System.out.println("Lambda Expression");
-		people.forEach(p -> System.out.println(p));
+//		people.forEach(p -> System.out.println(p));
 		System.out.println("*****************");
 		System.out.println("Lambda Expression with Stream Method");
 
-		people.stream()
-		.filter(p -> p.getFirstName().startsWith("S"))
-		.forEach(p -> System.out.println(p));
+//		people.stream()
+//		.filter(p -> p.getFirstName().startsWith("S"))
+//		.forEach(p -> System.out.println(p));
 	}
 	//	Using Lamba Expression
 	

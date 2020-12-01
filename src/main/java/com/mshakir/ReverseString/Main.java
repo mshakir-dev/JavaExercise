@@ -7,6 +7,7 @@ public class Main {
 		System.out.println("Returns the specific letter from the charAt === " + myStr.charAt(4));
 		
 		System.out.println("Reverse String: " + reverse("abdul"));
+		System.out.println("Reverse String: " + reverse("Hello"));
 	}
 
 	public static String reverse(String s) {
@@ -15,5 +16,9 @@ public class Main {
 			result += s.charAt(s.length() - i - 1);
 		}
 		return result;
+	}
+	
+	public static String reverseBuilder(String str) {
+		return new StringBuilder(str).reverse().toString();
 	}
 }

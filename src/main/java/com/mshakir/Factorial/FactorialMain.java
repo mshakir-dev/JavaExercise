@@ -3,20 +3,19 @@ package com.mshakir.Factorial;
 public class FactorialMain {
 
 	public static void main(String[] args) {
-	    System.out.println("Factorial of -1 is: " + factorial(-1));
-	    System.out.println("Factorial of 5 is: " + factorial(5));
-
+		System.out.println("Factorial of -1 is: " + factorials(-1));
+		System.out.println("Factorial of 5 is: " + factorials(5));
 	}
 
-	public static Integer factorial(Integer n) {
-		if (n < 0) {
+	public static Integer factorials(Integer num) {
+		if (num < 0) {
 			return null;
+		} else if (num == 0) {
+			return 0;
+		} else if (num == 1) {
+			return 1;
 		} else {
-			int factorial = n;
-			for (int i = n - 1; i > 0; i--) {
-				factorial = factorial * i;
-			}
-			return factorial;			
+			return num * factorials(num - 1);
 		}
 	}
 }
